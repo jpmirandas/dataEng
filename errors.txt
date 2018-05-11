@@ -1,0 +1,1 @@
+./cluster.sh: line 3: dasdasdasdsad: command not found
