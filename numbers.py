@@ -1,15 +1,15 @@
 import numpy as np
 
 
-def ex_01(list):
-    return np.array(list)
+def ex_01(a):
+    return np.array(a)
 
 
 def ex_02():
     output = np.random.randint(4, size=(5, 5))
 
-    with open('output_numpy.txt', 'w') as file:
-        file.write(str(output))
+    with open('output_numpy.txt', 'w') as f:
+        f.write(str(output))
 
 
 def ex_03():
@@ -18,8 +18,8 @@ def ex_03():
     return np.sum(numbers)
 
 
-def ex_04(list):
-    return np.unique(list)
+def ex_04(a):
+    return np.unique(a)
 
 
 def ex_05(list1, list2):
@@ -36,4 +36,3 @@ if __name__ == "__main__":
     print(ex_03())
     print(ex_04([1, 2, 6, 2, 7]))
     print(ex_05([1, 2, 6, 2, 7], [7]))
-
