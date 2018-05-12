@@ -1,14 +1,18 @@
 import datetime as timer
 
+
 def ex_01(date_str):
     return timer.datetime.strptime(date_str, '%b %d %Y %I:%M%p')
+
 
 def ex_01_01(date):
     return str(date)
 
+
 def ex_02():
     days = len([m for m in range(1,13) for y in (2015, 2016) if (timer.date(y, m, 1)).weekday() == 0])
     return days
+
 
 def ex_03():
     lines = []
@@ -25,7 +29,6 @@ def ex_03():
     with open('output', 'w') as file:
         file.write(str)
         # file.write(str2)
-
 
 
 if __name__ == "__main__":
