@@ -1,0 +1,14 @@
+FROM python:3.6-alpine
+
+RUN apk --no-cache --update-cache add gcc gfortran python python-dev py-pip build-base wget freetype-dev libpng-dev openblas-dev
+
+RUN pip install -U numpy
+
+COPY requirements.txt /
+RUN pip install -U -r /requirements.txt
+
+RUN pip install -U scikit-learn
+
+RUN pip install -U setuptools
+
+CMD ["python3"]
