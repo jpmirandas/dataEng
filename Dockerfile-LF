@@ -5,10 +5,8 @@ RUN apk --no-cache --update-cache add gcc gfortran python python-dev py-pip buil
 RUN pip install -U numpy
 
 COPY requirements.txt /
-RUN pip install -U -r /requirements.txt
+RUN pip install -U -v -r /requirements.txt
 
-RUN pip install -U scikit-learn
-
-RUN pip install -U setuptools
+RUN pip install 
 
 RUN apk add --no-cache bash
