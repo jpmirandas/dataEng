@@ -1,6 +1,10 @@
 numpy
 scipy
-pandas
 matplotlib
+ipython
+jupyter
+pandas
+sympy
+nose
 scikit-learn
 setuptools

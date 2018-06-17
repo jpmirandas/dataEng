@@ -1,12 +1,7 @@
 FROM python:3.6-alpine
 
-RUN apk --no-cache --update-cache add gcc gfortran python python-dev py-pip build-base wget freetype-dev libpng-dev openblas-dev
-
-RUN pip install -U numpy
+RUN apk --update add build-base freetype-dev gfortran libpng-dev openblas-dev
 
 COPY requirements.txt /
-RUN pip install -U -v -r /requirements.txt
 
-RUN pip install 
-
-RUN apk add --no-cache bash
+RUN pip install -v -r /requirements.txt
